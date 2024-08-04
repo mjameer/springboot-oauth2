@@ -1,0 +1,23 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          gitHubs:
+            clientId: Ov23livdsZMMAg3bcWCp
+            clientSecret: ce6517b585669b8861d92a581e05a4a50ef836e7
+            authorizationGrantType: authorization_code
+            redirectUri: "http://localhost:8080/login/oauth2/code/gitHubs"
+            scope: read:user, user:email
+            clientAuthenticationScheme: form
+        provider:
+          gitHubs:
+            authorizationUri: https://github.com/login/oauth/authorize
+            tokenUri: https://github.com/login/oauth/access_token
+            userInfoUri: https://api.github.com/user
+            userNameAttribute: id
+
+
+logging:
+  level:
+    org.springframework: DEBUG
