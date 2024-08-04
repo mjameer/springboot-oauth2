@@ -1,6 +1,6 @@
 # SpringBoot OAuth2 Implementation
 
-Project to shows how to implement OAuth2 login using GitHub/Google/Custom Resource server
+Project to show how to implement OAuth2 login using GitHub/Google/Custom Resource server
 
 ### OAuth2.0 flow High level 
 
@@ -10,7 +10,7 @@ Project to shows how to implement OAuth2 login using GitHub/Google/Custom Resour
 
 ![oauth2-flow](https://github.com/user-attachments/assets/f4e2fc66-ac60-4baa-9e9a-e5a511ab150a)
 
-### Steps to create a gitHub application
+### Steps to create a GitHub application
 * Go to [GitHub developer portal](https://github.com/settings/developers)
 * Create a new application and provide the required information
   * Set the homepage URL to http://localhost:8080
@@ -54,4 +54,4 @@ spring:
             userNameAttribute: id
 ```
 
-Reference : https://github.com/ali-bouali/oauth2-social-login, upgraded to latest versions, and implemented custom OAUTH2 implementation
+Reference : https://github.com/ali-bouali/oauth2-social-login & https://github.com/JianChoi-Kor/OAuth2.git, upgraded to latest versions, and implemented custom OAUTH2 implementation
