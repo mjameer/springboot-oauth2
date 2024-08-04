@@ -54,4 +54,5 @@ spring:
             userNameAttribute: id
 ```
 
-Reference : https://github.com/ali-bouali/oauth2-social-login & https://github.com/JianChoi-Kor/OAuth2.git, upgraded to latest versions, and implemented custom OAUTH2 implementation
+Git Reference : https://github.com/ali-bouali/oauth2-social-login & https://github.com/JianChoi-Kor/OAuth2.git, upgraded to latest versions, and implemented custom OAUTH2 implementation
+Blog reference : https://wildeveloperetrain.tistory.com/252
