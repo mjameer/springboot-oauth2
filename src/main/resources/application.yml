@@ -21,3 +21,7 @@ spring:
 logging:
   level:
     org.springframework: DEBUG
+
+
+jwt:
+  expiration: 3600000
