@@ -10,6 +10,8 @@ Project to show how to implement OAuth2 login using GitHub/Google/Custom Resourc
 
 ![oauth2-flow](https://github.com/user-attachments/assets/f4e2fc66-ac60-4baa-9e9a-e5a511ab150a)
 
+![oauth2-new-flow](https://github.com/user-attachments/assets/d9c76395-86ba-4a47-9b55-180354bb1bc2)
+
 ### Steps to create a GitHub application
 * Go to [GitHub developer portal](https://github.com/settings/developers)
 * Create a new application and provide the required information
