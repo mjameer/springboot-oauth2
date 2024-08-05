@@ -16,7 +16,7 @@ Project to show how to implement OAuth2 login using GitHub/Google/Custom Resourc
 * Go to [GitHub developer portal](https://github.com/settings/developers)
 * Create a new application and provide the required information
   * Set the homepage URL to http://localhost:8080
-  * Authorization callback URL to http://localhost:8080/login/oauth2/code/gitHubs. (should match the registrationID)
+  * Authorization callback URL to http://localhost:8080/login/oauth2/code/gitHubs. (should match the custom registrationId, which is gitHubs)
 
 ### Update the `application.yml` file
 
