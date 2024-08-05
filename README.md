@@ -1,3 +1,8 @@
+# OAuth2 Notes
+
+![image](https://github.com/user-attachments/assets/6a46ba74-ec2e-4d5a-bcc5-e3eb200fe308)
+
+
 # SpringBoot OAuth2 Implementation
 
 Project to show how to implement OAuth2 login using GitHub/Google/Custom Resource server
@@ -56,8 +61,20 @@ spring:
             userNameAttribute: id
 ```
 
+# How does it work
+
+![image](https://github.com/user-attachments/assets/2d8db0e8-171a-4ab9-b96c-37854b00c3e4)
+
+![image](https://github.com/user-attachments/assets/20264d94-6f88-4cac-b4db-11e427d03038)
+
+![image](https://github.com/user-attachments/assets/0882f335-3707-44b5-99db-7e9d3c881f63)
+
 Git Reference: https://github.com/JianChoi-Kor/OAuth2.git
 
 Blog reference: https://wildeveloperetrain.tistory.com/252
 
-YouTube: https://www.youtube.com/watch?v=2WNjmT2z7c4 & https://www.youtube.com/watch?v=npS9OLUE5rc
+YouTube: 
+- https://www.youtube.com/watch?v=2WNjmT2z7c4
+- https://www.youtube.com/watch?v=npS9OLUE5rc
+- https://www.youtube.com/watch?v=LyqeHAkxVyk
+- https://www.youtube.com/watch?v=LyqeHAkxVyk
