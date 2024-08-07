@@ -69,12 +69,16 @@ spring:
 
 ![image](https://github.com/user-attachments/assets/0882f335-3707-44b5-99db-7e9d3c881f63)
 
-Git Reference: https://github.com/JianChoi-Kor/OAuth2.git
+Git Reference: 
+- https://github.com/JianChoi-Kor/OAuth2.git
+- https://github.com/caligula95/crud-app-example
 
-Blog reference: https://wildeveloperetrain.tistory.com/252
+Blog reference: 
+- https://wildeveloperetrain.tistory.com/252
 
 YouTube: 
 - https://www.youtube.com/watch?v=2WNjmT2z7c4
 - https://www.youtube.com/watch?v=npS9OLUE5rc
 - https://www.youtube.com/watch?v=LyqeHAkxVyk
 - https://www.youtube.com/watch?v=LyqeHAkxVyk
+- https://www.youtube.com/watch?v=ouE3NuTzf20&t=137s
