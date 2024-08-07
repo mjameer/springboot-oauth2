@@ -1,9 +1,13 @@
-# OAuth2 Notes
+# OAuth2
+
+![image](https://github.com/user-attachments/assets/fc56803d-4380-4d4c-8fa2-ed49ef883ce7)
+
+## Notes
 
 ![image](https://github.com/user-attachments/assets/6a46ba74-ec2e-4d5a-bcc5-e3eb200fe308)
 
 
-# SpringBoot OAuth2 Implementation
+## SpringBoot OAuth2 Implementation
 
 Project to show how to implement OAuth2 login using GitHub/Google/Custom Resource server
 
@@ -61,7 +65,7 @@ spring:
             userNameAttribute: id
 ```
 
-# How does it work
+## How does it work
 
 ![image](https://github.com/user-attachments/assets/2d8db0e8-171a-4ab9-b96c-37854b00c3e4)
 
