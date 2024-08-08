@@ -1,6 +1,6 @@
 # OAuth2
 
-![image](https://github.com/user-attachments/assets/c67f02cb-e76e-4358-8ff5-9e8562fbc6ff)
+![image](https://github.com/user-attachments/assets/7cd57ff2-d981-40e9-a2b7-41afe1ab53f2)
 
 OAuth 2.0 is an authorization framework that enables applications to access a user’s data on another service (like Facebook or GitHub) without sharing the user’s password.
 
