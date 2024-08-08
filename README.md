@@ -1,10 +1,41 @@
 # OAuth2
 
-![image](https://github.com/user-attachments/assets/fc56803d-4380-4d4c-8fa2-ed49ef883ce7)
+![image](https://github.com/user-attachments/assets/c67f02cb-e76e-4358-8ff5-9e8562fbc6ff)
 
-## Notes
+OAuth 2.0 is an authorization framework that enables applications to access a user’s data on another service (like Facebook or GitHub) without sharing the user’s password.
 
-![image](https://github.com/user-attachments/assets/6a46ba74-ec2e-4d5a-bcc5-e3eb200fe308)
+Simply put, it aids in authorization between services.
+
+It’s essentially a digital handshake between the app, service, and user, with everyone agreeing on what is shared. 
+
+The process generally follows 6 steps with 4 components typically involved:
+
+🔸 Client (app wanting access)
+🔸 Resource owner (user)
+🔸 Authorization server
+🔸 Resource server
+
+To understand the process, let’s take a look at how a game would connect to a player’s Facebook account.
+
+Step 1) Request access:
+Within the game (client), the player (user) clicks on a “connect with Facebook” button to link their profile and find friends.
+
+Step 2) Redirect to service:
+The game redirects the player to Facebook’s (service’s) login page.
+
+Step 3) Permission request:
+After logging in, the data that the game is requesting access to will be shown to the player which they can either allow or deny.
+
+Step 4) Authorization code:
+If the player gives their approval, Facebook redirects the player back to the game with an authorization code (from authorization server). The code is a temporary credential that proves the player’s consent.
+
+Step 5) Exchange code for token:
+The game now sends the authorization code along with its own identification to Facebook’s server in the background. Facebook identifies the authorization code and the game’s identity and returns an access token.
+
+Step 6) Use the token:
+The game can now use the access token to request the agreed-upon data from Facebook (from the resource server), like the player's friends list.
+
+In this process, the player’s Facebook credentials were never shared, but the game was able to access the agreed-upon player data from Facebook. This is what OAuth 2.0 facilitates; allowing third-party applications to access data from services in a secure manner without sharing credentials.
 
 
 ## SpringBoot OAuth2 Implementation
