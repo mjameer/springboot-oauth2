@@ -11,8 +11,11 @@ It’s essentially a digital handshake between the app, service, and user, with 
 The process generally follows 6 steps with 4 components typically involved:
 
 🔸 Client (app wanting access)
+
 🔸 Resource owner (user)
+
 🔸 Authorization server
+
 🔸 Resource server
 
 To understand the process, let’s take a look at how a game would connect to a player’s Facebook account.
