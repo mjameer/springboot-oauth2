@@ -1,7 +1,50 @@
 # About Project - Springboot-oauth2
 
-
 This repository contains a Spring Boot 3 project that demonstrates how to secure an API with OAuth 2.0 done using GitHub, but one thing unique about this project is, that we dint use direct GitHub configurations provided by SpringBoot, instead, we tweaked and configured the code to consider GitHub as a custom Authentication/Authorization server. 
+
+### Steps to create a GitHub application
+* Go to [GitHub developer portal](https://github.com/settings/developers)
+* Create a new application and provide the required information
+  * Set the homepage URL to http://localhost:8080
+  * Authorization callback URL to http://localhost:8080/login/oauth2/code/gitHubs. (should match the custom registrationId, which is gitHubs)
+
+### Update the `application.yml` file
+
+For App to work with InBuild Github configurations, use the following
+
+```
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: {{client-id-here}}
+            clientSecret: {{client-secret-here}}
+```
+
+For the App to work with Custom Build OAUTH2 configurations, use the following [Here I tweaked the code to assume I'm using a custom Authentication/Authorization Server]
+
+```         
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          gitHubs:
+            clientId: {{client-id-here}}
+            clientSecret: {{client-secret-here}}
+            authorizationGrantType: authorization_code
+            redirectUri: "http://localhost:8080/login/oauth2/code/gitHubs"
+            scope: read:user, user:email
+            clientAuthenticationScheme: form
+        provider:
+          gitHubs:
+            authorizationUri: https://github.com/login/oauth/authorize
+            tokenUri: https://github.com/login/oauth/access_token
+            userInfoUri: https://api.github.com/user
+            userNameAttribute: id
+```
 
 
 # More on OAuth2 
@@ -61,49 +104,6 @@ Project to show how to implement OAuth2 login using GitHub/Google/Custom Resourc
 
 ![oauth2-new-flow](https://github.com/user-attachments/assets/d9c76395-86ba-4a47-9b55-180354bb1bc2)
 
-### Steps to create a GitHub application
-* Go to [GitHub developer portal](https://github.com/settings/developers)
-* Create a new application and provide the required information
-  * Set the homepage URL to http://localhost:8080
-  * Authorization callback URL to http://localhost:8080/login/oauth2/code/gitHubs. (should match the custom registrationId, which is gitHubs)
-
-### Update the `application.yml` file
-
-For App to work with InBuild GitHub configurations, use the following
-
-```
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          github:
-            clientId: {{client-id-here}}
-            clientSecret: {{client-secret-here}}
-```
-
-For App to work with Custom Build OAUTH2 configurations, use the following
-
-```         
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          gitHubs:
-            clientId: {{client-id-here}}
-            clientSecret: {{client-secret-here}}
-            authorizationGrantType: authorization_code
-            redirectUri: "http://localhost:8080/login/oauth2/code/gitHubs"
-            scope: read:user, user:email
-            clientAuthenticationScheme: form
-        provider:
-          gitHubs:
-            authorizationUri: https://github.com/login/oauth/authorize
-            tokenUri: https://github.com/login/oauth/access_token
-            userInfoUri: https://api.github.com/user
-            userNameAttribute: id
-```
 
 ## How does it work
 
