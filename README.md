@@ -1,7 +1,7 @@
-# About Project - springboot-oauth2
+# About Project - Springboot-oauth2
 
 
-This repository contains a Spring Boot 3 project that demonstrates how to secure an API with OAuth 2.0 done using GitHub, but special about this project is, that we dint use direct GitHub configurations provided by SpringBoot, instead, we tweaked and configured the code to consider GitHub as a custom Authentication/Authorization server. 
+This repository contains a Spring Boot 3 project that demonstrates how to secure an API with OAuth 2.0 done using GitHub, but one thing unique about this project is, that we dint use direct GitHub configurations provided by SpringBoot, instead, we tweaked and configured the code to consider GitHub as a custom Authentication/Authorization server. 
 
 
 # More on OAuth2 
