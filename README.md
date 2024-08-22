@@ -51,11 +51,10 @@ spring:
 
 ![image](https://github.com/user-attachments/assets/7cd57ff2-d981-40e9-a2b7-41afe1ab53f2)
 
-OAuth 2.0 is an authorization framework that enables applications to access a user’s data on another service (like Facebook or GitHub) without sharing the user’s password.
+OAuth 2.0 is a framework for delegating access between systems, rather than a comprehensive protocol for authentication or API security. It allows a user to authorize one system to act on their behalf with another system, facilitating data sharing and streamlined experiences. Unlike authentication (proving identity) and authorization (defining permissions), OAuth 2.0 focuses on access delegation. It is intentionally flexible, allowing extensions like OpenID Connect to provide additional functionalities, such as user profile information.
 
-Simply put, it aids in authorization between services.
+Simply put, it aids in authorization between services. It’s essentially a digital handshake between the app, service, and user, with everyone agreeing on what is shared. 
 
-It’s essentially a digital handshake between the app, service, and user, with everyone agreeing on what is shared. 
 
 The process generally follows 6 steps with 4 components typically involved:
 
